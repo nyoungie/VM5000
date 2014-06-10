@@ -7,6 +7,7 @@ public class RegistrierungFenster {
 
         //Fenster für die Registrierung
         JFrame registrierungsFenster = new JFrame("Anmeldung");
+        registrierungsFenster.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
         //Panel wo alle Elemente drin sind in einem GridBagLayout
         JPanel registrierungspanel = new JPanel();
