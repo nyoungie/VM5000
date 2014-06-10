@@ -27,7 +27,7 @@ public class LoginFenster {
         ImageIcon registrierungIcon = new BildBauer().createImageIcon("img/registrierungButton.png");
         Button registrierung = new Button(registrierungIcon,400);
 
-        ImageIcon loginIcon = new BildBauer().createImageIcon("img/signUpButton.png");
+        ImageIcon loginIcon = new BildBauer().createImageIcon("img/loginButton.png");
         Button login = new Button(loginIcon,400);
 
         //hier werden alle Elemente dem loginPanel hinzugefügt
