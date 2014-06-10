@@ -11,7 +11,6 @@ public class MultiplayerFenster {
 
         //Fragepanel im Norden für den Timer, die Lösung der Frage und der Frage
         JPanel fragePanel = new JPanel(new GridBagLayout());
-        fragePanel.setBackground(Color.WHITE);
 
         //Felder für den Timer, die Lösung der Frage und der Frage
         Label timer = new Label("Timer",true,Color.CYAN);
@@ -19,9 +18,9 @@ public class MultiplayerFenster {
         Label frage = new Label("Vokabel",true,Color.YELLOW);
 
         //Timer, Lösung und Frage dem fragePanel hinzufügen
-        fragePanel.add(timer, new GridBagConstraints(0,0,0,1,1,1,GridBagConstraints.LINE_START,GridBagConstraints.NONE,new Insets(5,5,5,5),50,0));
-        fragePanel.add(loesung, new GridBagConstraints(1,0,0,1,1,1,GridBagConstraints.LINE_END,GridBagConstraints.NONE,new Insets(5,5,5,5),50,0));
-        fragePanel.add(frage, new GridBagConstraints(0,1,0,1,1,1,GridBagConstraints.CENTER,GridBagConstraints.NONE,new Insets(5,5,5,5),50,0));
+        fragePanel.add(timer, new GridBagConstraints(0,0,0,1,1,1,GridBagConstraints.LINE_START,GridBagConstraints.NONE,new Insets(0,0,0,0),0,0));
+        fragePanel.add(loesung, new GridBagConstraints(1,0,0,1,1,1,GridBagConstraints.LINE_END,GridBagConstraints.NONE,new Insets(0,0,0,0),0,0));
+        fragePanel.add(frage, new GridBagConstraints(0,1,0,1,1,1,GridBagConstraints.CENTER,GridBagConstraints.NONE,new Insets(40,5,20,5),0,0));
 
         //Antwortpanel in der Mitte für die Antwortmöglichkeiten und den Buzzer
         JPanel antwortPanel = new JPanel();
@@ -47,19 +46,19 @@ public class MultiplayerFenster {
 
         //Felder für die 3 Spieler + Punktestand
         Label spielerEins = new Label("Spieler 1",true,Color.LIGHT_GRAY);
-        Label spielerEinsPunkte = new Label("S1 Punkte",true,Color.DARK_GRAY);
+        Label spielerEinsPunkte = new Label("S1 Punkte",true,Color.WHITE);
         Label spielerZwei = new Label("Spieler 2",true,Color.LIGHT_GRAY);
-        Label spielerZweiPunkte = new Label("S2 Punkte",true,Color.DARK_GRAY);
+        Label spielerZweiPunkte = new Label("S2 Punkte",true,Color.WHITE);
         Label spielerDrei = new Label("Spieler 3",true,Color.LIGHT_GRAY);
-        Label spielerDreiPunkte = new Label("S3 Punkte",true,Color.DARK_GRAY);
+        Label spielerDreiPunkte = new Label("S3 Punkte",true,Color.WHITE);
 
         //Labels dem spielerPanel hinzufügen
-        spielerPanel.add(spielerEins, new GridBagConstraints(0,0,0,1,1,1,GridBagConstraints.LINE_START,GridBagConstraints.NONE,new Insets(5,5,5,5),50,0));
-        spielerPanel.add(spielerZwei, new GridBagConstraints(1,0,0,1,1,1,GridBagConstraints.CENTER,GridBagConstraints.NONE,new Insets(5,5,5,5),50,0));
-        spielerPanel.add(spielerDrei, new GridBagConstraints(2,0,0,1,1,1,GridBagConstraints.LINE_END,GridBagConstraints.NONE,new Insets(5,5,5,5),50,0));
-        spielerPanel.add(spielerEinsPunkte, new GridBagConstraints(0,1,0,1,1,1,GridBagConstraints.LINE_START,GridBagConstraints.NONE,new Insets(5,5,5,50),20,0));
-        spielerPanel.add(spielerZweiPunkte, new GridBagConstraints(1,1,0,1,1,1,GridBagConstraints.CENTER,GridBagConstraints.NONE,new Insets(5,5,5,5),20,0));
-        spielerPanel.add(spielerDreiPunkte, new GridBagConstraints(2,1,0,1,1,1,GridBagConstraints.LINE_END,GridBagConstraints.NONE,new Insets(5,5,5,5),20,0));
+        spielerPanel.add(spielerEins,new GridBagConstraints(0,0,0,1,1,1,GridBagConstraints.LINE_START,GridBagConstraints.NONE,new Insets(0,0,0,0),0,0));
+        spielerPanel.add(spielerZwei,new GridBagConstraints(1,0,0,1,1,1,GridBagConstraints.CENTER,GridBagConstraints.NONE,new Insets(0,0,0,0),0,0));
+        spielerPanel.add(spielerDrei,new GridBagConstraints(2,0,0,1,1,1,GridBagConstraints.LINE_END,GridBagConstraints.NONE,new Insets(0,0,0,0),0,0));
+        spielerPanel.add(spielerEinsPunkte,new GridBagConstraints(0,1,0,1,1,1,GridBagConstraints.LINE_START,GridBagConstraints.NONE,new Insets(5,0,5,0),0,0));
+        spielerPanel.add(spielerZweiPunkte,new GridBagConstraints(1,1,0,1,1,1,GridBagConstraints.CENTER,GridBagConstraints.NONE,new Insets(5,0,5,0),0,0));
+        spielerPanel.add(spielerDreiPunkte,new GridBagConstraints(2,1,0,1,1,1,GridBagConstraints.LINE_END,GridBagConstraints.NONE,new Insets(5,0,5,0),0,0));
 
         //Komponenten zum multiplayerFenster hinzufügen
         multiplayerFenster.add(fragePanel, BorderLayout.NORTH);
@@ -67,7 +66,7 @@ public class MultiplayerFenster {
         multiplayerFenster.add(spielerPanel, BorderLayout.SOUTH);
 
         //Fenstergröße setzen und anzeigen lassen
-        multiplayerFenster.setSize(400,300);
+        multiplayerFenster.setSize(415,400);
         multiplayerFenster.setVisible(true);
 
     }
