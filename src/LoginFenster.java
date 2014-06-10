@@ -17,8 +17,8 @@ public class LoginFenster {
         loginPanel.setOpaque(false);
 
         //Textfelder zum Abfragen der Logindaten
-        JTextField id_txt = new JTextField(10);
-        JTextField pw_txt = new JTextField(10);
+        JTextField idText = new JTextField(10);
+        JTextField pwText = new JTextField(10);
 
         //Button werden hier erstellt
         ImageIcon zumMenuIcon = new BildBauer().createImageIcon("img/cancelButton.png");
@@ -33,8 +33,8 @@ public class LoginFenster {
         //hier werden alle Elemente dem loginPanel hinzugefügt
         loginPanel.add(zumMenu,new GridBagConstraints(0,1,0,1,1,1,GridBagConstraints.CENTER,GridBagConstraints.NONE,new Insets(0,350,0,0),0,0));
         loginPanel.add(registrierung,new GridBagConstraints(0,2,0,1,1,1,GridBagConstraints.CENTER,GridBagConstraints.NONE,new Insets(30,0,0,0),0,0));
-        loginPanel.add(id_txt,new GridBagConstraints(0,3,0,1,1,1,GridBagConstraints.CENTER,GridBagConstraints.NONE,new Insets(52,130,0,0),0,0));
-        loginPanel.add(pw_txt,new GridBagConstraints(0,4,0,1,1,1,GridBagConstraints.CENTER,GridBagConstraints.NONE,new Insets(14,130,0,0),0,0));
+        loginPanel.add(idText,new GridBagConstraints(0,3,0,1,1,1,GridBagConstraints.CENTER,GridBagConstraints.NONE,new Insets(52,130,0,0),0,0));
+        loginPanel.add(pwText,new GridBagConstraints(0,4,0,1,1,1,GridBagConstraints.CENTER,GridBagConstraints.NONE,new Insets(14,130,0,0),0,0));
         loginPanel.add(login,new GridBagConstraints(0,5,0,1,1,1,GridBagConstraints.CENTER,GridBagConstraints.NONE,new Insets(40,0,0,0),0,0));
 
         loginBg.add(loginPanel);
