@@ -5,7 +5,7 @@ public class MultiplayerFenster {
 
     public MultiplayerFenster() {
 
-        //Fenster für den Multiplayer :3
+        //Fenster für den Multiplayer
         JFrame multiplayerFenster = new JFrame();
         multiplayerFenster.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
