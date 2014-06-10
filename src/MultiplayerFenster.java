@@ -61,7 +61,6 @@ public class MultiplayerFenster {
         spielerPanel.add(spielerZweiPunkte, new GridBagConstraints(1,1,0,1,1,1,GridBagConstraints.CENTER,GridBagConstraints.NONE,new Insets(5,5,5,5),20,0));
         spielerPanel.add(spielerDreiPunkte, new GridBagConstraints(2,1,0,1,1,1,GridBagConstraints.LINE_END,GridBagConstraints.NONE,new Insets(5,5,5,5),20,0));
 
-
         //Komponenten zum multiplayerFenster hinzufügen
         multiplayerFenster.add(fragePanel, BorderLayout.NORTH);
         multiplayerFenster.add(antwortPanel);
